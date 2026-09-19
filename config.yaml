@@ -1,4 +1,3 @@
-# Hyperliquid Scalping Bot Configuration
 coin: ETH
 network: testnet
 size: 0.01
@@ -6,5 +5,16 @@ risk:
   max_position_usd: 10000
   max_daily_loss_usd: 500
   max_leverage: 5
+  max_trades_per_hour: 30
+  cooldown_seconds: 10
+  max_consecutive_losses: 5
+  kill_switch: false
 params:
-  # Build a scalping bot on Hyperliquid using 1m micro-trends, tight spreads, quick TP/SL in bps, max tr
+  flow_window_seconds: 10
+  max_spread_bps: 8
+  min_imbalance: 0.18
+  min_flow_imbalance: 0.15
+  min_score: 2
+  max_entry_slippage_bps: 5
+  tp_bps: 12
+  sl_bps: 8
